@@ -17,7 +17,9 @@ public class SecurityConfig {
     SecurityFilterChain securityFilterChain(HttpSecurity http) {
         try {
             http.authorizeHttpRequests(auth ->
-                    auth.requestMatchers("/loans/**"))
+                    auth.requestMatchers("/loans", "/balance", "/account", "/cards")
+                            .authenticated()
+                            .anyRequest().permitAll())
                     .formLogin(Customizer.withDefaults())
                     .httpBasic(Customizer.withDefaults());
             return http.build();
