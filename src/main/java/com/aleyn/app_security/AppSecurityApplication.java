@@ -8,6 +8,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 @SpringBootApplication
 public class AppSecurityApplication {
 
+	// prueba para git
 	public static void main(String[] args) {
 		SpringApplication.run(AppSecurityApplication.class, args);
 	}
