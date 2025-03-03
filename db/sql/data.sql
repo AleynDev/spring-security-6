@@ -1,9 +1,4 @@
-insert into users (username, password, enabled)
+insert into customers (email, pwd, rol)
 VALUES
-('admin', 'to_be_encoded', true),
-('user', 'to_be_encoded', true);
-
-insert into authorities (username, authority)
-VALUES
-('admin', 'admin'),
-('user', 'user');
+('super_user@debuggeandoieas.com', 'test', 'admin'),
+('basic_user@debuggeandoieas.com', 'test', 'user');
