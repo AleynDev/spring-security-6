@@ -8,8 +8,8 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 @SpringBootApplication
 public class AppSecurityApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(AppSecurityApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(AppSecurityApplication.class, args);
+    }
 
 }
